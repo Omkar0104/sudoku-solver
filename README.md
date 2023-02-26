@@ -20,5 +20,5 @@ This is a web application that allows users to solve Sudoku puzzles as well as g
 6. Click the New Puzzle button to generate a new Sudoku puzzle to solve
 
 ## Screenshots
-![Alt Text](/Screenshot%20(476).png)
+![Alt Text](/display.png)
 

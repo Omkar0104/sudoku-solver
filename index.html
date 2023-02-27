@@ -6,7 +6,7 @@
       <style>
         /* CSS styles for the board */
         .board {
-          margin-top: 20px;
+          margin-top: 30px;
           display: flex;
     align-items: center;
     justify-content: space-around;
@@ -33,11 +33,31 @@
         .current {
           background-color: #ffa500;
         }
+        .board-container{
+             background-color: #eafbff;
+        }
+        .sudoku-win {
+  animation-name: win;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: #bdffc5;
+}
+
+@keyframes win {
+  from {
+    transform: scale(.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
       </style>
     </head>
     <body>
       <div class="board">
-        <div>
+        <div class="board-container">
         <table>
           <tr>
             

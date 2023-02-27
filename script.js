@@ -116,6 +116,14 @@ function submitBtn() {
        col++;
      }
    });
+   if(flag == 1){
+   
+    document.querySelectorAll(".cell").forEach((ele)=>{
+      ele.bgColor = "#bdffc5";
+    })
+    console.log("All correct!");
+   }
+    document.querySelector(".board-container").classList.add("sudoku-win");
 }
 function resetBtn() {
   solved = solveSudokuOuter([
@@ -135,7 +143,7 @@ function resetBtn() {
   row = 0,
     col = 0;
   cells.forEach((cell) => {
-    cell.bgColor="white";
+    cell.bgColor = "#eafbff";
   unsolvedSudokuArr[row][col] = solved[row][col];
   if (row == (r1 || r2 || r3) || col == (r1 || r2 || r3)) {
     unsolvedSudokuArr[row][col] = " ";
@@ -157,5 +165,7 @@ function resetBtn() {
   }
 
 });
+document.querySelector(".board-container").classList.remove("sudoku-win");
+// document.querySelector(".board-container").bgColor = "#";
 }
 
